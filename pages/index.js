@@ -10,8 +10,8 @@ function HomePage() {
   return (
     <div>
       <Head>
+        <link rel="shortcut icon" href="/favicon.svg" />
         <title>Yusuf Cingöz</title>
-        <link rel="shortcut icon" href="y-combinator-brands.svg" />
       </Head>
       <div className="site-container">
         <div className={'space-y-4'}>
