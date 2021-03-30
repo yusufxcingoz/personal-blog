@@ -15,7 +15,7 @@ function HomePage() {
 
           <p>
             Çukurova Üniversitesi Otomotiv Mühendisliği öğrencisiyim. Boş
-            zamanlarımda ise Web geliştirme, müzik prodiksiyonu ve sokak
+            zamanlarımda ise Web geliştirme, müzik prodüksiyonu ve sokak
             fotoğrafçılığı ile ilgileniyorum.
           </p>
         </div>
