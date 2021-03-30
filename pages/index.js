@@ -1,12 +1,18 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import { AiOutlineGithub } from 'react-icons/ai'
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { FaInstagram } from 'react-icons/fa'
+import { icon } from '@fortawesome/fontawesome-svg-core'
 
 function HomePage() {
   return (
     <div>
+      <Head>
+        <title>Yusuf Cingöz</title>
+        <link rel="shortcut icon" href="y-combinator-brands.svg" />
+      </Head>
       <div className="site-container">
         <div className={'space-y-4'}>
           <h1 className={'text-2xl font-bold'}>
