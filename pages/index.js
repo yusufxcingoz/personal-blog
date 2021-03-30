@@ -20,7 +20,7 @@ function HomePage() {
           </p>
         </div>
       </div>
-      <div className={'max-w-3xl mx-auto mt-10'}>
+      <div className={'max-w-3xl mx-auto mt-10 px-6'}>
         <img src="/ben.jpeg" />
       </div>
 

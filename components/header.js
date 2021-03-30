@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function Header() {
   return (
-    <header className="site-container py-6">
+    <header className="site-container py-6 flex justify-center">
       <nav className={'space-x-4 flex flex-row'}>
         <div className={' font-medium hover:text-gray-500 duration-300'}>
           <Link href="/" className={'bg-black'}>
