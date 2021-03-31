@@ -11,4 +11,8 @@
   .site-container {
     @apply max-w-2xl mx-auto px-6;
   }
+
+  .blog-page-container {
+    @apply max-w-3xl mx-auto px-6;
+  }
 }
