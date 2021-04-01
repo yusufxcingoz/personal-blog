@@ -34,7 +34,9 @@ export default function PostPage({ post }) {
               </button>
             </div>
           ) : (
-            <div></div>
+            <div>
+              <p>You need to login for add comment.</p>
+            </div>
           )}
         </div>
       </form>
