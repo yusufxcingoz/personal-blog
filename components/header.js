@@ -38,7 +38,7 @@ function Header() {
               <button
                 className="bg-red-300 hover:bg-red-400 duration-500 rounded-lg px-2 py-1"
                 onClick={() =>
-                  logout({ returnTo: process.env.NEXT_PUBLIC_URL + '/blog' })
+                  logout({ returnTo: 'https://www.yusufcingoz.me/' })
                 }
               >
                 Logout
