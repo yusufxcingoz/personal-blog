@@ -34,9 +34,7 @@ export default function PostPage({ post }) {
               </button>
             </div>
           ) : (
-            <div>
-              <button onClick={() => loginWithPopup()}>Log In</button>
-            </div>
+            <div></div>
           )}
         </div>
       </form>
