@@ -11,9 +11,9 @@ function Header() {
   } = useAuth0()
   return (
     <div className=" flex items-center">
-      <header className="site-container  py-6 flex justify-between">
+      <header className=" py-6 flex justify-between site-container">
         <nav
-          className={'space-x-4 items-center flex justify-between flex-row '}
+          className={'space-x-4 items-center flex justify-between flex-row   '}
         >
           <div className={' font-medium hover:text-gray-500 duration-300'}>
             <Link href="/" className={'bg-black'}>

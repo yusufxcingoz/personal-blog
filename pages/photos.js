@@ -15,8 +15,8 @@ function PhotosPage({ photos, stats }) {
     console.log(photos)
   return (
     <PageTransition>
-      <div className="c-small site-container">
-        <p className="text-lg text-center">
+      <div className="c-small mx-auto site-container">
+        <p className="text-lg text-center ">
           Güzel bir kare gördüğümde, zaman ve mekan fark etmeksizin telefonumu çıkarıp o anı ölümsüzleştirmeyi seviyorum.
           Sonrasında dönüp baktığımda anı yakalayabilmiş olmak güzel bir haz veriyor.
         </p>
