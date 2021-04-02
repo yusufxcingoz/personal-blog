@@ -4,6 +4,7 @@ import { AiOutlineGithub } from 'react-icons/ai'
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { FaInstagram } from 'react-icons/fa'
+import { FaSpotify } from 'react-icons/fa'
 import PageTransition from '../components/page-transition'
 
 
@@ -60,6 +61,11 @@ function HomePage() {
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
           <Link href="https://www.instagram.com/yusf.wav/" className="">
             <FaInstagram />
+          </Link>
+        </div>
+        <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
+          <Link href="https://open.spotify.com/artist/3Miy5QferhpPgiVjXBf3U2?si=OwiW-ETkQyiyk7S4JRtc5g" className="">
+            <FaSpotify />
           </Link>
         </div>
       </footer>
