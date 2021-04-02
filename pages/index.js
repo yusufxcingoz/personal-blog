@@ -32,13 +32,13 @@ function HomePage() {
         <img src="/ben.jpeg" />
       </div>
 
-      <footer className="my-10 text-2xl flex justify-center space-x-8 flex-row ">
+      <footer className="my-10 text-2xl flex justify-center space-x-8 flex-row absolute top-64 left-0 w-full h-full items-center  ">
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
           <Link
             href="https://github.com/yusufxcingoz"
-            className="hover:text-gray-400"
+            className="hover:text-white"
           >
-            <AiOutlineGithub />
+            <AiOutlineGithub className="text-gray-400 hover:text-white  duration-300 "/>
           </Link>
         </div>
 
@@ -47,7 +47,7 @@ function HomePage() {
             href="https://www.linkedin.com/in/yusuf-cingoz/"
             className="hover:text-gray-400"
           >
-            <AiFillLinkedin />
+            <AiFillLinkedin className="text-gray-400 hover:text-white duration-300  "/>
           </Link>
         </div>
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
@@ -55,17 +55,17 @@ function HomePage() {
             href="https://twitter.com/lokiod1nson"
             className="hover:text-gray-400"
           >
-            <AiOutlineTwitter />
+            <AiOutlineTwitter className="text-gray-400 hover:text-white duration-300 " />
           </Link>
         </div>
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
           <Link href="https://www.instagram.com/yusf.wav/" className="">
-            <FaInstagram />
+            <FaInstagram  className="text-gray-400 hover:text-white duration-300  " />
           </Link>
         </div>
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
           <Link href="https://open.spotify.com/artist/3Miy5QferhpPgiVjXBf3U2?si=OwiW-ETkQyiyk7S4JRtc5g" className="">
-            <FaSpotify />
+            <FaSpotify  className="text-gray-400 hover:text-white duration-300 "/>
           </Link>
         </div>
       </footer>
