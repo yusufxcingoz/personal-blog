@@ -15,5 +15,14 @@
   .blog-page-container {
     @apply max-w-3xl mx-auto px-6;
   }
+  .home__footer-item {
+    @apply text-gray-400 hover:text-white duration-300 ;
+  }
+  .home__footer {
+    @apply my-10 text-2xl flex justify-center space-x-8 flex-row absolute top-64 left-0 w-full h-full items-center ;
+  }
+  .home__footer-mobil {
+    @apply my-10 mt-5 text-2xl flex justify-center space-x-8 flex-row  w-full h-full items-center ;
+  }
 }
 

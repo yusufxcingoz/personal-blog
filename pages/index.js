@@ -30,15 +30,14 @@ function HomePage() {
       </div>
       <div className={'max-w-3xl mx-auto mt-10 px-6'}>
         <img src="/ben.jpeg" />
-      </div>
-
-      <footer className="my-10 text-2xl flex justify-center space-x-8 flex-row absolute top-64 left-0 w-full h-full items-center  ">
+        
+      <div className=" lg:home__footer sm:my-10 mt-5 text-2xl flex justify-center space-x-8 flex-row  w-full h-full items-center  ">
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
           <Link
             href="https://github.com/yusufxcingoz"
             className="hover:text-white"
           >
-            <AiOutlineGithub className="text-gray-400 hover:text-white  duration-300 "/>
+            <AiOutlineGithub className="lg:home__footer-item  "/>
           </Link>
         </div>
 
@@ -47,7 +46,7 @@ function HomePage() {
             href="https://www.linkedin.com/in/yusuf-cingoz/"
             className="hover:text-gray-400"
           >
-            <AiFillLinkedin className="text-gray-400 hover:text-white duration-300  "/>
+            <AiFillLinkedin className="lg:home__footer-item sm:"/>
           </Link>
         </div>
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
@@ -55,20 +54,22 @@ function HomePage() {
             href="https://twitter.com/lokiod1nson"
             className="hover:text-gray-400"
           >
-            <AiOutlineTwitter className="text-gray-400 hover:text-white duration-300 " />
+            <AiOutlineTwitter className="lg:home__footer-item " />
           </Link>
         </div>
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
           <Link href="https://www.instagram.com/yusf.wav/" className="">
-            <FaInstagram  className="text-gray-400 hover:text-white duration-300  " />
+            <FaInstagram  className="lg:home__footer-item   " />
           </Link>
         </div>
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
           <Link href="https://open.spotify.com/artist/3Miy5QferhpPgiVjXBf3U2?si=OwiW-ETkQyiyk7S4JRtc5g" className="">
-            <FaSpotify  className="text-gray-400 hover:text-white duration-300 "/>
+            <FaSpotify  className="lg:home__footer-item  "/>
           </Link>
         </div>
-      </footer>
+      </div>
+      </div>
+
     </PageTransition>
   )
 }
