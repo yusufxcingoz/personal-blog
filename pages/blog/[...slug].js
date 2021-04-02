@@ -1,6 +1,7 @@
 import { getMdxNode, getMdxPaths } from 'next-mdx/server'
 
 import { useAuth0 } from '@auth0/auth0-react'
+import PageTransition from '../../components/page-transition'
 
 export default function PostPage({ post }) {
   const {
@@ -12,7 +13,7 @@ export default function PostPage({ post }) {
   } = useAuth0()
 
   return (
-    <div className="">
+    <PageTransition className="">
       <article>
         <div className="max-w-3xl mx-auto px-12  bg-gray-200 py-4 rounded-3xl ">
           <h2 className="my-10 font-bold text-lg ">{post.frontMatter.title}</h2>
@@ -40,7 +41,7 @@ export default function PostPage({ post }) {
           )}
         </div>
       </form>
-    </div>
+    </PageTransition>
   )
 }
 

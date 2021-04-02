@@ -4,11 +4,12 @@ import { AiOutlineGithub } from 'react-icons/ai'
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { FaInstagram } from 'react-icons/fa'
-import { icon } from '@fortawesome/fontawesome-svg-core'
+import PageTransition from '../components/page-transition'
+
 
 function HomePage() {
   return (
-    <div>
+    <PageTransition>
       <Head>
         <link rel="shortcut icon" href="/favicon.svg" />
         <title>Yusuf Cingöz</title>
@@ -62,7 +63,7 @@ function HomePage() {
           </Link>
         </div>
       </footer>
-    </div>
+    </PageTransition>
   )
 }
 

@@ -26,6 +26,11 @@ function Header() {
               <a>Yazılar</a>
             </Link>
           </div>
+          <div className={'hover:text-gray-500 duration-300'}>
+            <Link href="/photos" className={'mx'}>
+              <a>Fotoğraflarım</a>
+            </Link>
+          </div>
 
           {isAuthenticated ? (
             <div className=" flex items-center space-x-4 ">

@@ -1,9 +1,10 @@
 import { getAllNodes } from 'next-mdx/server'
 import Link from 'next/link'
+import PageTransition from './page-transition'
 
 function BlogPage({ posts }) {
   return (
-    <div className="px-6">
+    <PageTransition className="px-6">
       {posts.map((post) => {
         return (
           <Link href={post.url} className="">
@@ -26,7 +27,7 @@ function BlogPage({ posts }) {
           </Link>
         )
       })}
-    </div>
+    </PageTransition>
   )
 }
 export async function getStaticProps() {
