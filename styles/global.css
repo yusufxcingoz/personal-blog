@@ -19,10 +19,14 @@
     @apply text-gray-400 hover:text-white duration-300 ;
   }
   .home__footer {
-    @apply my-10 text-2xl flex justify-center space-x-8 flex-row absolute top-64 left-0 w-full h-full items-center ;
+    @apply my-10 text-2xl flex justify-center space-x-8 flex-row absolute top-36 left-0 w-full h-full items-center ;
   }
   .home__footer-mobil {
     @apply my-10 mt-5 text-2xl flex justify-center space-x-8 flex-row  w-full h-full items-center ;
   }
+  .blog__page-items {
+    @apply max-w-3xl mx-auto py-4 px-12  mb-8 bg-gray-200 hover:bg-gray-300 duration-300 cursor-pointer rounded-3xl ;
+  }
+
 }
 

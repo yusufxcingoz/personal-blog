@@ -28,16 +28,16 @@ function HomePage() {
           </p>
         </div>
       </div>
-      <div className={'max-w-3xl mx-auto mt-10 px-6'}>
+      <div className={'max-w-3xl max-h-3xl mx-auto mt-10 px-6 relative'}>
         <img src="/ben.jpeg" />
         
-      <div className=" lg:home__footer sm:my-10 mt-5 text-2xl flex justify-center space-x-8 flex-row  w-full h-full items-center  ">
+      <div className=" lg:home__footer md:home__footer sm:my-10 mt-5 text-2xl flex justify-center space-x-8 flex-row  w-full h-full items-center  ">
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
           <Link
             href="https://github.com/yusufxcingoz"
             className="hover:text-white"
           >
-            <AiOutlineGithub className="lg:home__footer-item  "/>
+            <AiOutlineGithub className="lg:home__footer-item md:home__footer-item  "/>
           </Link>
         </div>
 
@@ -46,7 +46,7 @@ function HomePage() {
             href="https://www.linkedin.com/in/yusuf-cingoz/"
             className="hover:text-gray-400"
           >
-            <AiFillLinkedin className="lg:home__footer-item sm:"/>
+            <AiFillLinkedin className="lg:home__footer-item md:home__footer-item"/>
           </Link>
         </div>
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
@@ -54,17 +54,17 @@ function HomePage() {
             href="https://twitter.com/lokiod1nson"
             className="hover:text-gray-400"
           >
-            <AiOutlineTwitter className="lg:home__footer-item " />
+            <AiOutlineTwitter className="lg:home__footer-item md:home__footer-item " />
           </Link>
         </div>
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
           <Link href="https://www.instagram.com/yusf.wav/" className="">
-            <FaInstagram  className="lg:home__footer-item   " />
+            <FaInstagram  className="lg:home__footer-item md:home__footer-item   " />
           </Link>
         </div>
         <div className="hover:text-gray-500 hover:cursor-pointer duration-300">
           <Link href="https://open.spotify.com/artist/3Miy5QferhpPgiVjXBf3U2?si=OwiW-ETkQyiyk7S4JRtc5g" className="">
-            <FaSpotify  className="lg:home__footer-item  "/>
+            <FaSpotify  className="lg:home__footer-item md:home__footer-item "/>
           </Link>
         </div>
       </div>
