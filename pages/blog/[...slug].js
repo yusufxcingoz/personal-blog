@@ -2,6 +2,8 @@ import { getMdxNode, getMdxPaths } from 'next-mdx/server'
 
 import { useAuth0 } from '@auth0/auth0-react'
 import PageTransition from '../../components/page-transition'
+import { faObjectGroup } from '@fortawesome/free-solid-svg-icons'
+import { useState, useEffect } from 'react'
 
 export default function PostPage({ post }) {
   const {
@@ -9,8 +11,34 @@ export default function PostPage({ post }) {
     loginWithPopup,
     isAuthenticated,
     user,
-    logout
+    logout,
+    getAccessTokenSilently
   } = useAuth0()
+
+  const [text, setText] = useState('')
+  const [url, setUrl] = useState('')
+
+  useEffect(() => {
+    const url = window.location.origin + window.location.pathname
+    setUrl(url)
+  }, [])
+
+  const onSubmit = async (e) => {
+    e.preventDefault()
+
+    const userToken = await getAccessTokenSilently()
+
+    const response = await fetch('/api/comment', {
+      method: 'POST',
+      body: JSON.stringify({ text, userToken, url }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+
+    const data = await response.json()
+    console.log(data)
+  }
 
   return (
     <PageTransition className="">
@@ -21,8 +49,9 @@ export default function PostPage({ post }) {
           <p className="my-4 text-gray-500">{post.frontMatter.date}</p>
         </div>
       </article>
-      <form className="max-w-3xl mx-auto px-12 mt-10">
+      <form className="max-w-3xl mx-auto px-12 mt-10" onSubmit={onSubmit}>
         <textarea
+          onChange={(e) => setText(e.target.value)}
           rows="3"
           className="border w-full block p-2 rounded-lg focus:border-transparent focus:rounded-lg"
         />
