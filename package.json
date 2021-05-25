@@ -22,6 +22,7 @@
     "comma-number": "^2.0.1",
     "framer-motion": "^4.1.2",
     "ioredis": "^4.27.2",
+    "luxon": "^1.27.0",
     "nano-id": "^1.1.0",
     "nanoid": "^3.1.22",
     "next": "^10.1.1",
