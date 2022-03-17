@@ -17,18 +17,18 @@ function Header() {
         >
           <div className={' font-medium hover:text-gray-500 duration-300'}>
             <Link href="/" className={'bg-black'}>
-              <a>Hakkımda</a>
+              <a>About Me.</a>
             </Link>
           </div>
 
           <div className={'hover:text-gray-500 duration-300'}>
             <Link href="/blog" className={'mx'}>
-              <a>Yazılar</a>
+              <a>Writings.</a>
             </Link>
           </div>
           <div className={'hover:text-gray-500 duration-300'}>
             <Link href="/photos" className={'mx'}>
-              <a>Fotoğraflarım</a>
+              <a>Photos.</a>
             </Link>
           </div>
 
@@ -40,25 +40,10 @@ function Header() {
               <div className={'hover:text-gray-500 duration-300'}>
                 <img src={user.picture} width={30} className="rounded-full" />
               </div>
-              <button
-                className="bg-red-300 hover:bg-red-400 duration-500 rounded-lg px-2 py-1"
-                onClick={() =>
-                  logout({ returnTo: 'https://www.yusufcingoz.me/' })
-                }
-              >
-                Logout
-              </button>
             </div>
           ) : (
             <div>
-              <div>
-                <button
-                  className="bg-blue-300 hover:bg-blue-400 duration-500 rounded-lg px-2 py-1"
-                  onClick={() => loginWithPopup()}
-                >
-                  Login
-                </button>
-              </div>
+              <div></div>
             </div>
           )}
         </nav>

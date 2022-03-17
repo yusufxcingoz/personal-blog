@@ -9,29 +9,26 @@ const Photos = dynamic(() => import('../components/photos'), {
   ssr: false
 })
 
-
-
 function PhotosPage({ photos, stats }) {
-    console.log(photos)
+  console.log(photos)
   return (
     <PageTransition>
       <div className="c-small mx-auto site-container">
         <p className="text-lg text-center ">
-          Güzel bir kare gördüğümde, zaman ve mekan fark etmeksizin telefonumu çıkarıp o anı ölümsüzleştirmeyi seviyorum.
-          Sonrasında dönüp baktığımda anı yakalayabilmiş olmak güzel bir haz veriyor.
+          When I see a beautiful frame, regardless of time and place, I like to
+          take out my phone and immortalize that moment. When I look back later,
+          being able to capture the moment gives a good pleasure.
         </p>
-
-       
       </div>
 
-    { /*{photos.map((ph) => {
+      {/*{photos.map((ph) => {
           return(
               <div>
                   <img src={ph.urls.regular}/>
               </div>
           )
-      })}*/ }
-    <Photos className="" data={photos}/>
+      })}*/}
+      <Photos className="" data={photos} />
     </PageTransition>
   )
 }

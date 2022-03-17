@@ -19,7 +19,7 @@ function BlogPage({ posts }) {
 
                   <p className="my-4 text-gray-500">{post.frontMatter.date}</p>
                   <p className=" text-gray-700">
-                    {post.frontMatter.author} yazdı.
+                    Wroted by {post.frontMatter.author}
                   </p>
                 </div>
               </div>

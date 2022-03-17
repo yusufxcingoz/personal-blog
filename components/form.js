@@ -19,20 +19,6 @@ function form({ onSubmit, setText, text }) {
           className="border w-full block p-2 rounded-lg focus:border-transparent focus:rounded-lg"
           value={text}
         />
-
-        <div className="mt-5">
-          {isAuthenticated ? (
-            <div className="flex items-center space-x-2">
-              <button className="bg-gray-300 hover:bg-gray-400 duration-500 rounded-lg px-2 py-1">
-                Comment
-              </button>
-            </div>
-          ) : (
-            <div>
-              <p>You need to login for add comment.</p>
-            </div>
-          )}
-        </div>
       </form>
     </div>
   )
